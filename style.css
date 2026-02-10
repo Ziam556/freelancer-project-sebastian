@@ -1,0 +1,21 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+
+.father {
+    border: solid black 1px;
+}
+
+#id-child {
+    color: yellowgreen;
+}
+
+p {
+    color: red;
+    color: blue;
+    font-size: 2.4rem;
+}
