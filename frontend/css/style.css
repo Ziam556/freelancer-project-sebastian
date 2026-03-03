@@ -150,27 +150,67 @@ a {
 }
 
 /* Hero */
+
+.hero {
+    background-image: url(/frontend/assets/images/6-imagen-hero-freelancer.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    text-align: center;
+    position: relative;
+}
+
+.hero__content {
+    background-color: rgba(0 0 0 / 60%);
+    position: absolute;
+    inset: 0;
+    color: var(--neutrals-50);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.hero__title {
+    margin: 0 auto;
+}
+
+.hero__location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.hero__location-icon {
+    height: 40px;
+    width: 40px;
+}
+
 .hero__button {
+    color: var(--neutrals-50);
+    background-color: var(--quaternary-800);
+    padding: 16px;
+    border-radius: 6px;
+    text-transform: uppercase; /*esta la convierte en mayuscula*/
+}
+
+.hero__button:hover {
+    cursor: pointer;
+    background-color: var(--secundary-500);
+    border: solid 1px var(--neutrals-100);
     color: var(--neutrals-100);
 }
 @media (width > 768px) {
-    .navbar {
-        
+
+    .hero__button{
+        margin: 0 auto;
     }
+
     .navbar__list {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
-
-    /* .texts {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 38px;
-        justify-content: space-around ;
-    }
-
-    .text{
-        border: solid 1px blue;
-    } */
 }
